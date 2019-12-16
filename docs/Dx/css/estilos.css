@@ -1,0 +1,227 @@
+:root {
+	font-size: 62.5%;
+}
+/**{
+	outline: dotted 1px red;
+}*/
+body {
+	font-family: "helvetica", "arial", "open sans", sans-serif;
+	color: #333;
+	margin:0;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+}
+header{
+	background:#333;
+	overflow: auto;
+	padding: 1rem;
+}
+header h1{
+	font-size: 2.4rem;
+	margin:0;
+	float: left;
+	font-weight: bold;
+	padding: .5rem;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	padding-left: 8rem;
+	background-position: center left; 
+}
+header h1, header a {
+	color:#D9D9D9;
+}
+header a{
+	font-size: 1.6rem;
+}
+#Menu nav {
+	float: right;
+}
+#Menu li{
+	display: inline-block;
+	margin:.5rem;
+}
+#Menu li a{
+	display: block;
+	padding: .5rem;
+}
+img {
+	display: block;
+	width:100%;
+}
+#noticias-destacadas {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+#noticias-destacadas ul{
+	display: flex;
+	padding: 0;
+	width: 300%;
+	/*tmb puedo utilizar la unidad de medida vw
+	width: 300vw; 
+	alternativa:
+	#noticias-destacadas{
+		width: 300vw;		VW=viewport
+		overflow: auto;
+		position: relative;(relative;absolut;fixed;sticked)
+		se habilitan: left;right;top;bottom;
+		left:;
+	#noticias-destacadas figure {
+		float: left;
+		width: 100vw
+		*/
+
+	animation: slider 15s infinite alternate;
+}
+#noticias-destacadas li{
+	width: 100%;
+	list-style: none;
+	background: #333;
+}
+#noticias-destacadas img{
+	width: 100%
+}
+#noticias-destacadas h2{
+	font-size: 4.2rem;
+	background: #333;
+	color: white;
+	font-weight: bold;
+	padding: 1.2rem;
+}
+/*
+.noticia {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-evenly;*//*flex-start ; flex-end , center, space-between , space-around , space-evenly*/
+	/*align-items: center;/*flex-start ; flex-end ; center ; stretch*/
+	/*padding: 1rem;
+}
+
+.noticia-img{
+	width: 30%;
+}
+.noticia-txt {
+	width: 60%
+}
+.noticia-txt h3{
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: black;
+}
+.noticia-txt a {
+	color: black;
+	padding: .5rem;
+}
+.noticia-txt p {
+	font-size: 1.6rem;
+	padding: .5rem;
+}*/
+#tabla-resultados table{
+	margin:auto;
+	width: 50%;
+}
+#tabla-resultados th{
+	background: red;
+	color: white;
+	font-weight: bold;
+}
+#tabla-resultados td{
+	background: #F2FBF8;
+}
+#tabla-resultados td,
+#tabla-resultados th{
+	padding:1rem;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+#tabla-resultados td:nth-of-type(odd){
+font-size: 3rem;
+font-weight: bold;
+text-align: center;
+}
+#tabla-resultados span{
+color:green;
+font-weight: bold;
+}
+#hamburguesa {
+	display: none;
+}
+.noticia-img{
+	padding: .5rem;
+}
+.noticia-txt {
+	color: black;
+	padding: 1rem;  
+}
+.noticia-txt h3{
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: black; 
+}
+.noticia-txt p{
+	font-size: 1.6rem; 
+}
+
+
+
+@keyframes slider {
+	0% {margin-left: 0%;}
+	30% {margin-left: 0%;}
+
+	35% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+
+	65% {margin-left: -200%;}
+	100% {margin-left: -200%}
+	/*si tengo puesto el float left en el figure
+@keyframes slider {
+	0%{left: 0;}
+	20%{left: 0;}
+	40%{left: -100vw;}
+	60%{left: -100vw;}
+	80%{left: -200vw;}
+	100%{left: -200vw;}
+}*/
+}
+
+/*mediaquery
+@media
+@media print{config de impresoras
+	
+}
+@media tty { cajeros de supermercados
+	
+}
+@media tv {para que se vea en la televisión
+	
+}
+*/
+
+@media screen and (max-width: 480px) {
+	/*inicio de mobile*/
+	#Menu {
+		display: none;
+	}
+	#Logo {
+		font.size: 2rem;
+		padding left: 7rem;
+	}
+	#hamburguesa {
+		display: block;
+		font-size: 2rem;
+		background-color: transparent;
+		border: none;
+		color: #d9d9d9;
+		float: right;
+	}
+
+	/*.noticia {
+		flex-direction: column;
+	}*/
+	
+	/*fin de mobile*/
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)

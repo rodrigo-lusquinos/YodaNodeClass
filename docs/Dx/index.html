@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"><!--Para mobile. -->
+		<title>DX - DeporteXtremo</title>
+		<!--<link rel="stylesheet" href="css/reset.css">-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/estilos.css">
+
+	</head>
+	<body>
+	<!-- Inicio Navbar con bootstrap
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <h1 class="navbar-brand mb-0">
+  	 <img src="img/logo.png" class="d-inline-block w-50" alt="">
+  	 <span class="h2 font-weight-bold">DeporteXtremo</span>
+  </h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto h3">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Futbol <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">NBA</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Tenis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fórmula 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Boxeo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">JJOO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Moto GP</a>
+      </li> 
+    </ul>
+    
+  </div>
+</nav>
+	 Fin de Navbar con bootstrap-->		
+		<header>
+			<h1 id="Logo">DeporteXtremo</h1>
+
+			<button id="hamburguesa">&#9776;</button>
+				
+			<nav id="Menu">
+				<ul>
+					<li>
+						<a href="#">Fútbol</a>
+					</li>
+					<li>
+						<a href="#">NBA</a>
+					</li>
+					<li>
+						<a href="#">Tenis</a>
+					</li>
+					<li>
+						<a href="#">Fórmula 1</a>
+					</li>
+					<li>							
+						<a href="#">Boxeo</a>
+					</li>
+					<li>
+						<a href="#">JJOO</a>
+					</li>
+					<li>
+						<a href="#">Moto GP</a>
+					</li>
+				</ul>
+			</nav>
+			</header>			
+		<main>
+		<!-- Comienzo de Noticias destacadas-->
+			<section id="noticias-destacadas">
+				<ul>
+					<li>
+					<figure>
+						<img src="img/juegos-olimpicos.jpg" alt="">
+						<figcaption>
+						<h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h2>	
+						</figcaption>
+					</figure>
+					</li>
+					<li>
+					<figure>
+						<img src="img/f1.jpg" alt="">
+						<figcaption>
+						<h2>Ricciardo marcó el ritmo en los libres de Azerbaiyán</h2>	
+						</figcaption>
+					</figure>
+					</li>
+					<li>
+					<figure>
+						<img src="img/rally.jpg" alt="">
+						<figcaption>
+						<h2>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h2>	
+						</figcaption>
+					</figure>
+					</li>
+				</ul>
+			</section>
+		<!-- Fin de Noticias destacadas-->
+		<!-- Comienzo de últimas noticias-->
+			<section id="ultimas-noticias" class="container-fluid">
+				<article class="row noticia">
+					<div class="col-12 col-md-4 noticia-img">
+						<img src="img/sorteo-libertadores.jpg">
+					</div>
+					<div class="col-12 col-md-8 noticia-txt">
+						<h3>La tecnología llega a la actual edición de la Libertadores</h3>
+						<p>por <a href="#">Joaquín Angeli</a></p>
+						<p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
+					</div>
+				</article>
+			</section>
+		<!-- Fin de últimas noticias-->
+		<!-- Comienzo de Tabla-->
+			<section id="tabla-resultados">
+				<table>
+					<tr>
+						<th colspan="4">3er Fecha</th>
+					</tr>
+					<!--Fila 1-->
+					<tr>
+						<td>1</td>
+						<td><span>Tigre</span>, 1pts<br><span>Patronato</span>, 3pts</td>
+						<td>2</td>
+						<td><span>Colón</span>, 4pts<br><span>Estudiantes</span>, 3pts</td>
+					</tr>
+					<!--Fila 2-->
+					<tr>
+						<td>3</td>
+						<td><span>Def. y Justicia</span>, 4pts<br><span>Únion</span>, 4pts</td>
+						<td>4</td>
+						<td><span>Argentinos Juniors</span>, 0pts<br><span>Belgrano</span>, 3pts</td>
+					</tr>
+					<!--Fila 3-->
+					<tr>
+						<td>5</td>
+						<td><span>Newell's</span>, 1pts<br><span>Olimpo</span>, 1pts</td>
+						<td>6</td>
+						<td><span>San Lorenzo</span>, 2pts<br><span>Arsenal</span>, 0pts</td>
+					</tr>
+					<!--Fila 4-->
+					<tr>
+						<td>7</td>
+						<td><span>Independiente</span>, 4pts<br><span>Lanús</span>, 0pts</td>
+						<td>8</td>
+						<td><span>Talleres</span>, 3pts<br><span>Vélez</span>, 3pts</td>
+					</tr>
+				</table>
+			</section>
+		<!-- Fin de Tabla-->
+		</main>
+		<footer>
+			
+		</footer>
+		<!-- Area de JAVASCRIPT-->
+			
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<script>
+		//aca vamos a programar un mini navegador
+		const ajax = new XMLHttpRequest()
+		//ajax.open(argumento tipo de petición via GET(trae datos, la excepción es que envia datos en formulario de busquedas) o POST(envia datos), recurso)
+		ajax.open("GET", "noticias.json")
+		//Función anónima: function()
+		ajax.onload = function(){//<--Petición exitosa
+
+			if( ajax.status == 200 ){//<-- Respuesta exitosa
+				//Acá voy a usar los datos
+				alert("Mirá la consola")
+				console.log( ajax.response )
+			}
+		}
+		
+		//ajax.onerror = ????
+
+		//ajax.send()
+
+	</script>
+	</body>
+</html>

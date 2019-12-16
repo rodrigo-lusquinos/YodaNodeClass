@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/normalize.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/extra.css">
+		<title>Aprender a programar con JavaScript</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="ejercicio_1.html" class="active">Ejercicio 1</a>
+				<a href="ejercicio_2.html">Ejercicio 2</a>
+				<a href="ejercicio_3.html">Ejercicio 3</a>
+				<a href="ejercicio_4.html">Ejercicio 4</a>
+				<a href="ejercicio_5.html">Ejercicio 5</a>
+				<a href="ejercicio_6.html">Ejercicio 6</a>
+				<a href="ejercicio_7.html">Ejercicio 7</a>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Aprender a programar con JavaScript</h1>
+		</section>
+
+		<aside>
+			<p>Crear un "asistente" que pida los siguientes datos de un producto:</p>
+			<ul>
+				<li>Nombre</li>
+				<li>Stock</li>
+				<li>Precio</li>
+				<li>Disponibilidad</li>
+			</ul>
+			<p>Validar que cada dato ingresado resulte "correcto" según su naturaleza.</p>
+			<p>Mostrar un mensaje en el <code>&lt;article&gt;</code> que indique el cuanto valen y cuantas unidades hay de ese producto.</p>
+			<article>
+
+			</article>
+		</aside>
+
+		<script>
+			/*
+			//Tipos de datos "primitivos"
+			//Datos de origen "determinado" (hardcodeado)
+			var nombre = "Computadora Bangho" //<--String /*No pueden empezar con numeros, no puede utilizar guión medio (solo para operación de resta)
+			var stock = 100 //<-- int
+			var precio = 39999.99 //<-- float
+			var disponibilidad = true //<-- bool
+
+			//Datos de origen "indeterminado" dos variantes
+			//... determinable luego de una operación lógico-matemática
+
+			var precioFinal = precio * 1.21
+
+			//... determinable luego de una operación del usuario
+			var usuario = prompt("Quien es usted?") //prompt es un comando bloqueante
+			
+			*/
+				//Introducción
+			var nombre = prompt("Ingrese Nombre")
+			var stock = prompt("Ingrese stock")
+			var precio = prompt("Ingrese precio")
+			var disponible = confirm("Está disponible para la venta?")
+
+			//uso de estructuras de control (estructura de tipo "if")
+			//"if" plantea una condición, si se cumple, hacer esto...
+			// || significa "o" && significa "y"
+
+				//Nudo
+			if( nombre == "" || nombre == null || nombre == undefined ){
+				alert("¡ERROR! El nombre no puede quedar vacio")
+			}
+			if ( !isNaN(stock) == true && stock < 0 ){
+				alert("¡ERROR! Ingrese un stock válido")
+			}
+			if ( isNaN(precio) || precio <= 0 || precio > 1000 ){
+				alert("¡ERROR! El Imgrese un precio entre $1 y $1000 (solo números)")
+			}
+			if (disponible == undefined){
+				alert("¡ERROR! Indique si está disponible")
+			}
+
+			//console.log("Hay " + stock + "unid. de " + nombre + " que valen $" + precio +" c/u")
+
+				//Desenlace
+			document.querySelector("article").innerText = "Hay " + stock + "unid. de " + nombre + " que valen $" + precio +" c/u" 
+			//script=Guion= como una obra de teatro. Se basa en seguir una secuencia. Se lo puede comparar con un texto narrativo (introducción, nudo y desenlace)
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/normalize.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/extra.css">
+		<title>Aprender a programar con JavaScript</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="ejercicio_1.html">Ejercicio 1</a>
+				<a href="ejercicio_2.html" class="active">Ejercicio 2</a>
+				<a href="ejercicio_3.html">Ejercicio 3</a>
+				<a href="ejercicio_4.html">Ejercicio 4</a>
+				<a href="ejercicio_5.html">Ejercicio 5</a>
+				<a href="ejercicio_6.html">Ejercicio 6</a>
+				<a href="ejercicio_7.html">Ejercicio 7</a>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Manipulación del DOM</h1>
+		</section>
+
+		<aside>
+			<p>Modificar el texto del titular utilizando javascript</p>
+		</aside>
+
+		<script>
+			//Document object model (DOM) modelo objeto del documento= es un árbol. Es un mapa que se hace del documento html. Cada etiqueta se las llama nodo.
+
+			/* 1) Seleccionar el h1 y guardarlo en una variable */
+
+			var titulo = document.querySelector("h1")
+
+			/* 2) Modificar el texto interno de esta variable */
+
+			//titulo.innerText = "Hola desde el bloque de \"script\" del documento"
+
+			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
+			//Rompe
+
+			// EXTRA: Explicacion de Manipulaciones
+
+			/* 1) Manipulacion de Contenido */
+				//Todos los comandos que me permiten cambiar el contenido de la etiqueta.
+				
+				//titulo.innerText: modifica el texto interno
+				//titulo.innerHTML: permite colocar etiquetas HTML dentro de un texto y las interpreta como etiquetas.
+
+
+			/* 2) Manipulacion de Estructura */
+				//Es la mas completa y a la vez la mas variable. Es lo opuesto a la de contenido
+				//lo que HTML se llama atributo, JS lo llama propiedad
+				
+
+			/* 3) Manipulacion de Comportamiento */
+				//Que cambie el contenido o la estética cuando pase algo. Ej: cuando quiero que funciene un slider, cuando hago click. "Cuando"
+				//son todo lo que tiene que ver con eventos. Comportamientos del usuario o del sistema.
+				titulo.onclick = modificarTitulo
+
+				//titulo.addEventListener("click", modificarTitulo)
+				//titulo.removeEvenListener("click", modificarTitulo)
+
+				function modificarTitulo(){
+					/*Inicio modificar titulo*/
+						/* 1) Manipulacion de Contenido */
+						titulo.innerHTML = "Estoy <em>manipulando</em> el contenido del h1"
+
+						/* 2) Manipulacion de Estructura */
+						//titulo.style.color = "Green"
+						//titulo.style.backgroundColor = "red"
+						//titulo.classList.add: agrega una clase.
+						titulo.classList.add("alerta")
+						titulo.title = "Que copado esto ¿no?"
+					/*Fin de modificar titulo*/
+				}
+				//funciones: bloques de código que hacen algo cuando alguien hace algo. Las funciones puede ejecutarse como parte del proceso {se le aplican los ()} o cuando el usuario haga algo. Las últimas funciones solo hay que asignarles el nombre, sin colocar los (). Como buena práctica las funciones deberían estar en un archivo aparte.
+			
+
+
+
+
+		</script>
+	</body>
+</html>
