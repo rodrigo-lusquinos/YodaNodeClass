@@ -32,4 +32,7 @@ para linux se debe colocar "sudo npm install nodemon"
 	touch .gitignore
 	nano .gitignore
 
-	
+8- A codear con Hugo
+ Creo el archivo app.js con nano app.js
+
+ Crear en la carpeta docs un archivo index.html y una pagina de bienvenida que apunte a las tres carpetas que pasamos a lo nuevo.
